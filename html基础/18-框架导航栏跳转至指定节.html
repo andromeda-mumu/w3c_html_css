@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+    点击侧边栏，会打开新的窗口地址。
+    需求是，点击侧边栏，右边内容框变化即可。
+    改代码，在内容frame中加入锚点name=showframe.在侧边栏<a>标签，加入target=showframe。表示在哪显示
+
+-->
+<frameset cols="20%,80%">
+    <frame src="侧边导航栏.html">
+    <frame src="11-链接.html" name="showframe">
+</frameset>
+</html>

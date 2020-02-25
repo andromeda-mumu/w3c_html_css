@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    value:      初始值
+    readonly:   只读
+    disabled:   禁用，被禁用的元素不会提交
+    size:       框框的长度
+    maxlength:  字段最大长度
+
+  HTML 5 属性：
+    autocomplete：   自动填充，浏览器基于用户之前输入的值自动填写。
+                     适用于<form>以及<input>类型：text,search,url,email,password,datepickers,range,color
+                     on 和 off控制是否自动
+
+    novalidate：     这是form的属性。提交表单不进行验证(如邮件email 就不验证是否是邮件)
+    autofocus：      input获得焦点
+    form             input属性，代表input元素所属的一个或多个表单..必须表单设置id
+    formaction       覆盖form中的action属性。。适用于type=submit  和type=image
+    formmethod       覆盖form表单的method属性
+    formnovalidate   覆盖form中的novalidate属性
+    formtarget       覆盖form中的target
+    height,width     规定input元素的宽高，只用于type=image
+    list             引用<datalist>元素中包含的<input>元素的预定义选项.(系统提供一些选项)
+    min max          规定<input>最大值，最小值。只用于 number,range,date,datetime,datetime-local,month,time,week
+    multiple         运行用户在<input>中输入一个以上的值。只适用于email 和 file
+    pattern          正则。适用于text,search,url,tel,email,password
+    placeholder      描述输入字段预期值的提示。适用于text,search,url,tel,email password (就是android的hint)
+    required         提交表单前必须输入的字段。适用于text,search,url,tel,email,password,datepickers,number,checkbox,radio,file
+    step             数字合法间隔，如step=3.则合法的数字 -3,0,3,6 。可与min max共用。适用于number,range,date,datetime,datetime-local,month,time,week
+
+
+
+
+
+
+-->
+<form action="" id="form1" method="GET" novalidate>
+    First name:<br>
+    <input type="text" name="firstname" value="John" size="40" >
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="木木" readonly><br/>
+    爱好：<input type="text" name="hobby" autocomplete="on" required>
+    E-mail: <input type="email" name="email" autocomplete="off"  autofocus><br>
+    <input type="submit" formaction="new_url.php" formmethod="post">
+    <br/><input type="submit" value="验证提交" formnovalidate formtarget="_blank">
+    <br/><input type="image" src="../images/head.png" alt="submit" width="80" height="80">
+    <br/><input list="browsers">
+    <datalist id="browsers">
+        <option>aaa</option>
+        <option>bbb</option>
+        <option>ccc</option>
+    </datalist><br/>
+   select images: <input type="file" name="img" multiple><br/>
+    Country code:
+    <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+</form>
+   遗漏的表单中的一员：<input type="text" name="nn" form="form1">
+</body>
+</html>

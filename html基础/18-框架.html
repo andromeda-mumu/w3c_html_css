@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--通过使用框架，可以在同一个浏览器窗口中显示不止一个页面
+    每份html称为一个框架
+    每个框架独立于其他框架
+    坏处：
+        开发人员必须同时跟踪更多html文档
+        很难打印整张页面
+
+    <frameset> 每个标签定义一系列行或列
+    rows/columns 的值规定了每行每列占据屏幕的面积
+
+    <frame>标签定义了放置在每个框架中的html文档
+
+     frameset 与body 不能同时使用
+
+     属性：
+        cols 垂直框架
+        rows 水平框架
+-->
+<frameset cols="25%,75%">
+    <frame src="11-链接.html">
+    <frame src="03-html元素.html">
+</frameset>
+
+<!--使用noframes-->
+<noframes>
+    <body>您的浏览器无法处理框架</body>
+</noframes>
+</html>

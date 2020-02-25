@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--q 短引用，会自动加上引号-->
+<p>我的目标是<q>好好学习，成就自我</q></p>
+
+<!--blockquote长引用，自动加入缩进-->
+<p>以下内容引用自 WWF 的网站：</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">五十年来，WWF 一直致力于保护自然界的未来。
+    世界领先的环保组织，WWF 工作于 100 个国家，
+    并得到美国一百二十万会员及全球近五百万会员的支持。</blockquote>
+
+<!--缩略词,带有虚线的下划线-->
+<p><abbr title="World Health Organization">WHO</abbr>成立于1948年</p>
+
+<!--dfn 同上，只是文字是斜体-->
+<p><dfn title="World Health Organization">WHO</dfn>成立于1948年</p>
+<p>the<dfn><abbr title="World Health Organization">WHO</abbr></dfn>成立于1948年</p><!--下划线和斜体并存-->
+<p><dfn>WHO</dfn> 没有设置title属性</p>
+
+<address>【address标签自动斜体】Written by Donald Duck.
+    Visit us at:<br/>
+    Example.com<br/>
+    Box 564, Disneyland<br/>
+    USA<br/>
+</address>
+
+<p><cite>【cite自动斜体】The Scream</cite>by jack in 1999</p>
+
+<bdo dir="rtl">【bdo设置dir属性，可以改变文字方向】</bdo>
+</body>
+</html>

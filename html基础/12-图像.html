@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body background="../images/hh.png"><!--插入背景图片，如果图像小于屏幕，则图片重复-->
+<!--alt 当图片不存在时，显示的文字-->
+<!--加载图片需要时间，每个图片就是一个链接地址，所以会慢-->
+<img src="../images/next.png" alt="不存在">
+<p>一幅图：
+    <img src="../images/haha.png" width="100px" height="100px">
+</p>
+
+<p>图像<img src="../images/head.png" alt="头像" align="bottom">bottom</p>
+<p>图像<img src="../images/head.png" align="middle">middle</p>
+<p>图像<img src="../images/head.png" align="top">top</p>
+<p>图像<img src="../images/head.png" align="left">显示在left</p>
+<p>图像<img src="../images/head.png" align="right">显示在right</p>
+
+
+<!--创建带有可供点击区域的图像地图。其中的每个区域都是一个超级链接。-->
+<!--使用<map>标签，name/id的形式，为每个区域添加点击事件-->
+<p>【map图像地图，area定义图像地图中可点区域】点击不同位置，出现不同图片</p>
+<img
+        src="../images/mm.png"
+        border="0" usemap="#planetmap"
+        alt="Planets"  />
+<map name="planetmap" id="planetmap">
+    <area
+            shape="circle"
+            coords="180,139,14"
+            href ="04-html属性.html"
+            target ="_blank"
+            alt="Venus" />
+    <area
+            shape="circle"
+            coords="129,161,10"
+            href ="11-链接.html"
+            target ="_blank"
+            alt="Mercury" />
+    <area
+            shape="rect"
+            coords="0,0,110,260"
+            href ="09-引用.html"
+            target ="_blank"
+            alt="Sun" />
+
+</map>
+
+<p>【其实就是链接用图像表示而已】把一幅普通的图像设置为图像映射</p>
+
+<a href="http://www.baidu.com">
+    <img src="../images/head.png" ismap />
+</a>
+</body>
+</html>

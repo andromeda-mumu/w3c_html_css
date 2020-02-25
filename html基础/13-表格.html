@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    表格由<table>标签定义。
+    每个表格有多行，用<tr>定义
+    每行有多个单元格，用<td>定义
+    标题用<th>定义，一般会粗体居中
+    <thead>表格页眉
+    <tfoot>表格页脚
+
+    属性：
+    cellpadding 单元格内容与边框直接的距离
+    cellspacing 单元格与单元格直接的距离
+    bgcolor  背景色 (添加在table后，就是整个表格。添加在td后，就是单个格子)
+    background 背景图
+    frame 可以控制表格的框，如何显示
+
+    col
+    colgroup 这两个效果
+-->
+<h4>横向的表头：</h4>
+<table width="600" border="8" cellpadding="10" cellspacing="10" bgcolor="pink">
+    <thead>页眉</thead>
+    <tr>
+        <th>heading</th>
+        <th>另一列</th>
+    </tr>
+    <tr>
+        <td>第一行，第一列</td>
+        <td>第一行，第二列</td>
+    </tr>
+    <tr>
+        <td>第二行，第一列</td>
+        <td>第二行，第二列</td>
+    </tr>
+    <tr>
+        <td>第三行，第一列</td>
+        <td>&nbsp;</td><!--为防止有的浏览器不显示空内容的单元格，因此用空格占位符-->
+    </tr>
+</table>
+
+<h4>垂直的表头：</h4>
+<table border="1" cellpadding="10" background="../images/mm.png">
+    <caption>我的标题</caption>
+    <tr>
+        <th>姓名</th>
+        <td>小猪</td>
+    </tr>
+    <tr>
+        <th>年龄</th>
+        <td>19</td>
+    </tr>
+</table>
+<h4>横跨两列的单元格</h4>
+<table border="1">
+    <tr>
+         <th>姓名</th>
+         <th colspan="2">电话</th>
+    </tr>
+    <tr>
+        <td>慢慢</td>
+        <td>182777373</td>
+    </tr>
+</table>
+<h4>横跨两行的单元格</h4>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <td>慢慢</td>
+    </tr>
+    <tr>
+        <th rowspan="2">电话</th>
+        <td>1827383738</td>
+    </tr>
+    <tr>
+        <td>1282882373</td>
+    </tr>
+</table>
+
+<h4>表格内的标签</h4>
+<table border="1">
+    <tr>
+        <td bgcolor="#adff2f">
+            <p>这是一个段落</p>
+            <p>这是一个段落</p>
+        </td>
+        <td background="../images/next.png">
+            这个单元格有个表格
+            <table border="1">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            这个单元格包含列表
+            <ul>
+                <li>苹果</li>
+                <li>苹果</li>
+                <li>苹果</li>
+            </ul>
+        </td>
+        <td>HELLO</td>
+    </tr>
+</table>
+
+<h4>使用align排列整齐</h4>
+<table width=400 border="1">
+    <tr>
+        <th align="left">消费项目</th>
+        <th align="right">一月</th>
+        <th align="right">二月</th>
+    </tr>
+    <tr>
+        <td>衣服</td>
+        <td align="right">283.9</td>
+        <td align="right">300</td>
+    </tr>
+    <tr>
+        <td>化妆品</td>
+        <td align="right">99</td>
+        <td align="right">293</td>
+    </tr>
+</table>
+
+<h4>使用frame控制边框样式</h4>
+<p>这是box</p>
+<table frame="box">
+    <tr>
+        <th>栏目一</th>
+        <th>栏目二</th>
+    </tr>
+    <tr>
+        <td>box</td>
+        <td>内容2</td>
+    </tr>
+</table>
+<p>这是above</p>
+<table frame="above">
+    <tr>
+        <th>栏目一</th>
+        <th>栏目二</th>
+    </tr>
+    <tr>
+        <td>above</td>
+        <td>内容2</td>
+    </tr>
+</table>
+<p>这是below</p>
+<table frame="below">
+    <tr>
+        <th>栏目一</th>
+        <th>栏目二</th>
+    </tr>
+    <tr>
+        <td>below</td>
+        <td>内容2</td>
+    </tr>
+</table>
+<p>这是hsides</p>
+<table frame="hsides">
+    <tr>
+        <th>栏目一</th>
+        <th>栏目二</th>
+    </tr>
+    <tr>
+        <td>hsides</td>
+        <td>内容2</td>
+    </tr>
+</table>
+<p>这是vsides</p>
+<table frame="vsides">
+    <tr>
+        <th>栏目一</th>
+        <th>栏目二</th>
+    </tr>
+    <tr>
+        <td>vsides</td>
+        <td>内容2</td>
+    </tr>
+</table>
+</body>
+</html>

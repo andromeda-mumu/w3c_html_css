@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    <input>元素：根据不同 type属性，可以变化为多种形态
+    <select>元素：下拉列表
+        option 一般默认选择首选项。也可以   通过selected属性设置
+
+    <textarea>元素：输入字段 （文本域）
+    <button> 元素：按钮
+25113
+    HTML5表单元素
+        <datalist>
+        <keygen>
+        <output>
+
+        <datalist>元素为<input>元素规定预定义选项列表，用户会在他们输入数据时，看到预定义选项的下拉列表
+        <input>元素的list属性必须引用<datalist>元素的id属性
+-->
+<select name="cars">
+    <option value="a">a</option>
+    <option value="b" selected>b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+</select>
+<textarea name="msg" rows="10" cols="30">
+    我是一大段文字
+</textarea>
+<button type="button" onclick="alert('hello world')">click me </button>
+<form action="action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="aa">
+        <option value="bb">
+        <option value="cc">
+        <option value="dd">
+    </datalist>
+</form>
+</body>
+</html>

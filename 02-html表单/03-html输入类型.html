@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    <input> 的type类型：
+        text：单行输入字段
+        password:   密码字段
+        submit:     提交表单处理程序. 如果省略value,则获得默认文本
+        radio:      单选
+        button:
+        date:       日期
+        color：      颜色字段
+        range:      一段范围内的值，一个进度条【min,max,step,value】
+        month:      月份和年份
+        week:       周和年
+        time:       时间（无时区）
+        datetime:   日期和时间（有时区）chrome firefox不支持
+        search:     搜索
+        tel:        电话号码
+        url:        用于包含url地址的输入字段。根据浏览器的支持，会自动验证url自动。某些手机识别url类型，并想键盘添加.com以匹配url输入
+
+
+
+   HTML5输入类型：
+        number:     能对数字做出验证
+        输入限制：disabled   输入字段被禁用
+                  max        最大值
+                  maxlength  最大字符数
+                  min        最小值
+                  pattern    正则校验
+                  readonly   只读
+                  required   输入字段必须填写
+                  size       字段宽度
+                  step       输入字段的合法间隔 如step=10,那么数字就是 10,20,30
+                  value      输入字段的默认值
+
+
+-->
+<form action="submit.php">
+    姓名：<input type="text" name="username"><br/>
+    性别：<input type="radio" name="sex" value="男" checked> 男
+    <input type="radio" name="sex" value="女" > 女<br/>
+    密码：<input type="password" name="pwd"><br/>
+    爱好：<input type="checkbox" name="eat" value="吃">喜欢吃<br/>
+    <input type="checkbox" name="play" value="玩">喜欢玩<br/>
+    <input type="submit" value="提交">
+    <input type="button" value="按钮">
+
+    请输入1-5之间的数:<input type="number" name="size" min="1" max="5"><br/>
+    <input type="number" name="points" min="0" max="100" step="10" value="30"  ><br/>
+
+    输入日期：<input type="date" name="bday" max="1979-12-31" min="2000-01-02"><br/>
+    选择颜色：<input type="color" name="favclor"><br/>
+    请选择范围: <input type="range" min="10" max="90" name="points"><br/>
+    请选择年月：<input type="month" name="bdatmonth"><br/>
+    请选择年周：<input type="week" name="week_year"><br/>
+    请选择时间：<input type="time" name="user_time"><br/>
+    请选择日期和时间：<input type="datetime" name="bdaytime"><br/>
+    请输入要搜索的内容：<input type="search" name="googlesearch"><br/>
+    添加链接：<input type="url" name="homepage">
+
+
+
+</form>
+</body>
+</html>
