@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box > p{/*div的子元素p */
+            color: pink;
+        }
+        h1>strong{/*h1元素的第一个孩子strong .*/
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <p>我是子元素</p>
+    <p>我是子元素</p>
+    <div><p>我是孙子</p></div>
+</div>
+<p>我是p</p>
+<h1>This is <strong>very</strong> <strong>very</strong> important.</h1>
+<h1>This is <em>really <strong>very</strong></em> important.</h1>
+</body>
+</html>

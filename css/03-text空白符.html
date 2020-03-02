@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pp{
+            /*white-space: normal;!*合并所有空格和忽略换行*!*/
+            white-space: pre;/*不会合并空格，也不会忽略换行*/
+        }
+        .nobr{
+            white-space: nowrap;/*禁止折行，超出浏览器的范围，也不会换行*/
+        }
+        .pw{
+            white-space: pre-wrap;/*保留空格，且识别自动换行*/
+        }
+        .pl{
+            white-space: pre-line;/*合并空格，识别自动换行*/
+        }
+    </style>
+</head>
+<body>
+<p class="pp">This     paragraph has    many
+    spaces           in it.</p>
+
+<p class="nobr">
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+</p>
+<p class="pw">This     paragraph has    a  great    many  s p a c e s   with
+    its textual  content, but their    preservation     will  not prevent
+    line   wrapping or line breaking.</p>
+<p class="pl">This     paragraph has    a  great    many  s p a c e s   with
+    its textual  content, but their    preservation     will  not prevent
+    line   wrapping or line breaking.</p>
+</body>
+</html>

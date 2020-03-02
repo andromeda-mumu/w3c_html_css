@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [moons="1"]{
+            color: red;
+        }
+        p[class="important warning"]{/*这里要完完全全一样，多一个空格都不行*/
+            color: yellow;
+        }
+        p[class="important"]{
+            color: blue;
+        }
+        p[class$="def"]{
+            background-color: fuchsia;
+        }
+        p[lang|="en"] {color: pink;}/*等于en或者 以en开头的*/
+    </style>
+</head>
+<body>
+<plent moons="1">Earth</plent>
+<plent moons="2">Earth</plent>
+<p class="important warning">测试测试测试测试</p>
+<p class="important">测试测试测试测试</p>
+<p class="hahadef">测试测试测试测试</p>
+<p lang="en">hello</p>
+<p lang="en-us">hello</p>
+<p lang="en-au">hello</p>
+<p lang="fr">不会</p>
+<p lang="cy-en">不会</p>
+</body>
+</html>

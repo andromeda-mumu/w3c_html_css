@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [title~=hello]{/*只要title中有一个是hello即可*/
+            color: red;
+        }
+        [title=world]{
+            border: 1px solid blue;
+        }
+        [type="text"]{
+            border: 1px solid yellow;
+        }
+        [type=button]{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<script>
+    /**
+     * [attribute]              选取带有指定属性的值
+     * [attribute=value]        选取带有指定属性和值的元素
+     * [attribute~=value]       选取属性值中包含指定词汇的元素
+     * [attribute|=value]       选取带有以指定值开头的属性值的元素，改值必须是整个单词
+     * [attribute^=value]       匹配属性值以指定值开头的每个元素
+     * [attribute$=value]       匹配属性值以指定值结尾的每个元素
+     * [attribute*=value]       匹配属性值包含指定值的每个元素
+     *
+    */
+</script>
+<h1>多值的情况</h1>
+<h1 title="hello world">hello world</h1>
+<p title="student hello"> student hello</p>
+<h1>单值的情况</h1>
+<h2 title="world">world</h2>
+<p title="student">student</p>
+<p title="world">哈哈哈，world</p>
+<h1>表单样式</h1>
+<input type="text" >
+<input type="button" value="按钮">
+</body>
+</html>

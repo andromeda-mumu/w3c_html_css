@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .outer{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 20px;
+            border: 1px solid red;/*如果不设置div的内边距和边框，那么内部的div的上外边距将于div的上外边距合并（叠加）*/
+            /*padding-top: 10px;*/
+        }
+        .inner{
+            width: 20px;
+            height: 20px;
+            margin-top: 30px;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner"></div>
+</div>
+</body>
+</html>
