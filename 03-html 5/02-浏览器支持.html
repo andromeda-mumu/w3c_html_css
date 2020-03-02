@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        header,section,footer,aside,nav,main,article,figure{/*把HTML5 元素定义为块级元素*/
+            display: block;
+        }
+        my{
+            display: block;
+            background-color: pink;
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<!--
+   所有浏览器不论新旧，都会自动把未识别元素当做行内元素来处理
+   向html添加新元素
+
+    添加那块注释，ie9会识别。
+-->
+<my>我的元素</my>
+
+</body>
+</html>
