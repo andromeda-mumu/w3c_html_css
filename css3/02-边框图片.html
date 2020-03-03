@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            border: 15px solid transparent;
+            width: 300px;
+            padding: 10px 20px;
+        }
+        .dv1{
+            border-image: url("../images/border.png") 30 30 round; /*有点像 点9 图片，会自动拉伸宽和高。*/
+        }
+        .dv2{
+            border-image: url("../images/border.png") 30 30 stretch;
+        }
+    </style>
+</head>
+<body>
+<div class="dv1">图片铺满整个边框</div>
+<div class="dv2">图片被拉伸</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes myfirst {
+            from{background: red}
+            to{background: yellow}
+        }
+        @-moz-keyframes myfirst {/*firefox*/
+            from{background: red}
+            to{background: yellow}
+        }
+        @-webkit-keyframes myfirst {
+            from{background: red}
+            to{background: yellow}
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation: myfirst 5s;
+        }
+    </style>
+</head>
+<body>
+<div>hello world</div>
+</body>
+</html>

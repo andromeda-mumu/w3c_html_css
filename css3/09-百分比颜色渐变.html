@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes myfirst {
+           0%{background: red}
+            25%{background: yellow}
+            50%{background: blue}
+            75%{background: pink}
+            100%{background: white}
+        }
+        @-moz-keyframes myfirst {/*firefox*/
+            0%{background: red}
+            25%{background: yellow}
+            50%{background: blue}
+            75%{background: pink}
+            100%{background: white}
+        }
+        @-webkit-keyframes myfirst {
+            0%{background: red}
+            25%{background: yellow}
+            50%{background: blue}
+            75%{background: pink}
+            100%{background: white}
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation: myfirst 5s;
+        }
+    </style>
+</head>
+<body>
+<div>hello world</div>
+</body>
+</html>

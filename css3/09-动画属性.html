@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: relative;/*必须加上这个定位，才能移动元素*/
+            /*animation-name: myfirst;*/
+            /*animation-duration: 2s;*/
+            /*!*animation-delay: 2s;*!*/
+            /*animation-iteration-count:infinite;*/
+            /*animation-timing-function: linear;*/
+            /*animation-direction: alternate;!*这个是改变活动轨迹*!*/
+            /*animation-play-state: running;*/
+            animation: myfirst 5s linear  infinite alternate;/*这个就是总的属性*/
+        }
+        @keyframes myfirst {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:200px; top:0px;}
+            50%  {background:blue; left:200px; top:200px;}
+            75%  {background:green; left:0px; top:200px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+        @-moz-keyframes myfirst {/*firefox*/
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:200px; top:0px;}
+            50%  {background:blue; left:200px; top:200px;}
+            75%  {background:green; left:0px; top:200px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+        @-webkit-keyframes myfirst {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:200px; top:0px;}
+            50%  {background:blue; left:200px; top:200px;}
+            75%  {background:green; left:0px; top:200px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+<div>hello world</div>
+</body>
+</html>
